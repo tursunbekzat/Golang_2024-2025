@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 	"math"
-	 "encoding/json"
+	"encoding/json"
 )
 
 type Person struct{
@@ -11,7 +11,7 @@ type Person struct{
 	age int
 }
 
-func Greet(p Person) string {
+func (p Person)Greet() string {
 	return "Hello, " + p.name
 }
 
@@ -85,7 +85,7 @@ func main(){
 	var person Person
 	person.name = "Bekzat"
 	person.age = 20
-	fmt.Println(Greet(person))
+	fmt.Println(person.Greet())
 
 	var manager Manager
 	manager.Employee = Employee{Name: "Bekzat", ID: "21b030726"}
