@@ -124,7 +124,7 @@ func queryUsers(ageFilter *int, page, pageSize int) {
     if ageFilter != nil {
         args = append(args, pageSize, (page-1)*pageSize) // Если фильтр есть
     } else {
-        args = append(args, pageSize, (page-1)*pageSize) // Если фильтра нет
+        args = append(args, pageSize, (page-1)*pageSize) // Если фильтра нетp
     }
 
     // Prepare the statement
