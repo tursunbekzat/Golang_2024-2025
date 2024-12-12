@@ -1,0 +1,17 @@
+{
+	"ulid": "01JEV32ZV3D35YDTDVTP7WE2EH",
+	"minTime": 1733115001473,
+	"maxTime": 1733119200000,
+	"stats": {
+		"numSamples": 5164,
+		"numSeries": 433,
+		"numChunks": 433
+	},
+	"compaction": {
+		"level": 1,
+		"sources": [
+			"01JEV32ZV3D35YDTDVTP7WE2EH"
+		]
+	},
+	"version": 1
+}

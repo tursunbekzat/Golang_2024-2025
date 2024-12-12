@@ -1,0 +1,19 @@
+groups:
+  - name: example_alerts
+    rules:
+      - alert: HighErrorRate
+        expr: sum(rate(http_requests_total{status=~"5.."}[5m])) / sum(rate(http_requests_total[5m])) > 0.05
+        for: 5m
+        labels:
+          severity: critical
+        annotations:
+          summary: "High error rate (5xx) detected"
+          description: "More than 5% of requests returned 5xx status codes in the last 5 minutes."
+
+      - alert: SlowResponseTime
+        expr: avg_over_time(http_requests_duration_seconds{job="backend"}[5m]) > 1
+        for: 5m
+        labels:
+          severity: critical
+        annotations:
+          description: "Response time is too high"

@@ -1,0 +1,21 @@
+             List of relations
+ Schema |      Name      | Type  |  Owner   
+--------+----------------+-------+----------
+ public | audit_logs     | table | postgres
+ public | cache          | table | postgres
+ public | cart_items     | table | postgres
+ public | categories     | table | postgres
+ public | order_items    | table | postgres
+ public | orders         | table | postgres
+ public | payments       | table | postgres
+ public | product_images | table | postgres
+ public | products       | table | postgres
+ public | reviews        | table | postgres
+ public | roles          | table | postgres
+ public | sessions       | table | postgres
+ public | shopping_cart  | table | postgres
+ public | shopping_carts | table | postgres
+ public | user_addresses | table | postgres
+ public | users          | table | postgres
+(16 rows)
+
